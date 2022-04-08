@@ -35,6 +35,7 @@
 
         // Removes ReCaptcha dismissal when clicking outside div area
         try {
+          document.getElementsByTagName('div')[3].style.position = 'initial';
           document.getElementsByTagName("div")[4].outerHTML = "";
         } catch (e) {}
 
@@ -95,7 +96,7 @@
       };
     </script>
   </head>
-  <body id="body">
+  <body id="body" style="background-color:#f0f5fb;">
     <span id="submit" style="visibility: hidden;"></span>
     <script src="${endpoint}" async defer></script>
   </body>
